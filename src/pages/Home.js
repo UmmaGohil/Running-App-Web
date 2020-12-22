@@ -5,11 +5,10 @@ import { ApolloProvider } from '@apollo/client'
 
 const Home = () => {
   return (
-    <ApolloProvider client={client}>
-      <div>
-        Home <Nav />
-      </div>
-    </ApolloProvider>
+    <>
+      Home
+      <Nav homeText={'home-text'} />
+    </>
   )
 }
 
