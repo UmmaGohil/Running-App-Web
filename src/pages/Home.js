@@ -1,14 +1,12 @@
 import React from 'react'
 import Nav from '../components/Nav'
-import { client } from '../ApolloClient/client'
-import { ApolloProvider } from '@apollo/client'
-
+import Page from '../template/page'
 const Home = () => {
   return (
-    <>
+    <Page bgColour="red">
       Home
       <Nav homeText={'home-text'} />
-    </>
+    </Page>
   )
 }
 
