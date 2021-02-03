@@ -4,7 +4,7 @@ import Page from '../template/page'
 
 const Add = () => {
   return (
-    <Page bgColour="orange">
+    <Page bgColour="bilobaFlower">
       Add
       <Nav />
     </Page>

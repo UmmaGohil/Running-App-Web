@@ -1,11 +1,13 @@
 import React from 'react'
 import Nav from '../components/Nav'
+import Page from '../template/page'
 
 const View = () => {
   return (
-    <div>
-      View <Nav />
-    </div>
+    <Page bgColour="yourPink">
+      View
+      <Nav />
+    </Page>
   )
 }
 

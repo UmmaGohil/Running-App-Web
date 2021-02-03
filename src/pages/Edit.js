@@ -1,12 +1,13 @@
 import React from 'react'
 import Nav from '../components/Nav'
+import Page from '../template/page'
 
 const Edit = () => {
   return (
-    <div>
+    <Page bgColour="bilobaFlower">
       Edit
       <Nav />
-    </div>
+    </Page>
   )
 }
 
