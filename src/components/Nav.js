@@ -10,7 +10,7 @@ const Nav = ({homeText}) => {
     <>
     {text.map((a, indx) => (
       <div>
-      <Link to="/">
+      <Link to={a}>
           <Icon style={{ fontSize: 50, color:'white'}} >{icons[indx]}</Icon>
           {homeText && a}
       </Link>
@@ -22,44 +22,3 @@ const Nav = ({homeText}) => {
 
 export default Nav
 
-/*
-<div>
-        <Link to="/">
-          <HomeIcon style={{ fontSize: 50, color:'white'}} />
-          {homeText && `Home`}
-        </Link>
-        
-      </div>
-      <div>
-        <div>
-          <Link to="/Add">
-            <VisibilityIcon style={{ fontSize: 50, color:'white'}} />
-            {homeText && `Add`}
-          </Link>
-        </div>
-      </div>
-      <div>
-        <div>
-          <Link to="/Edit">
-            <AddCircleOutlineIcon style={{ fontSize: 50, color:'white'}} />
-            {homeText && `Edit`}
-          </Link>
-        </div>
-      </div>
-      <div>
-        <div>
-          <Link to="/View">
-            <CreateIcon style={{ fontSize: 50, color:'white'}} />
-            {homeText && `View`}
-          </Link>
-        </div>
-      </div>
-      <div>
-        <div>
-          <Link to="/Route">
-            <DirectionsRunIcon style={{ fontSize: 50, color:'white'}} />
-            {homeText && `Route`}
-          </Link>
-        </div>
-      </div>
- */
