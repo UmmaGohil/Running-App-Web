@@ -9,10 +9,14 @@ const Page = ({ children, bgColour, home, title, homeBlockColour }) => {
   return (
     <div className={pageVar}>
       <div className="rounded-lg border-2 border-white">
-        {home && <div className="m-0 m-auto h-90vh w-1/2 bg-green-500 z-0 flex flex-wrap content-center">[home div]</div>}
+        {home && <div className="m-0 m-auto h-90vh w-1/2 bg-green-500 z-0 flex flex-wrap content-center"> 
+          <Nav homeText={'home-text'} /> 
+        </div>}
+       
         <div className={titleBlock}>{title}</div>
+        {!home && <Nav />}
+       
         {children}
-        {home ? <Nav homeText={'home-text'} /> : <Nav/>}
       </div>
     </div>
   )
