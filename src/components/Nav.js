@@ -8,13 +8,11 @@ const Nav = ({homeText}) => {
   const icons = ["home", "visibility", "add_circle_outline", "create", "directions_run"]
   return (
     <>
-    {text.map(a => (
+    {text.map((a, indx) => (
       <div>
       <Link to="/">
-        {icons.map(b => (
-          <Icon style={{ fontSize: 50, color:'white'}} >{b}</Icon>
-        ))}
-        {homeText && a}
+          <Icon style={{ fontSize: 50, color:'white'}} >{icons[indx]}</Icon>
+          {homeText && a}
       </Link>
     </div>
     ))}
