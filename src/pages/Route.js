@@ -3,7 +3,7 @@ import Page from '../template/page'
 
 const Route = () => {
   return (
-    <Page bgColour="carnation">
+    <Page bgColour="carnation" title='Route' homeBlockColour='red'>
       Route
     </Page>
   )
