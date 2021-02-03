@@ -14838,6 +14838,10 @@ video {
   height: 50vh;
 }
 
+.h-90vh {
+  height: 90vh;
+}
+
 .h-full {
   height: 100%;
 }
@@ -15040,6 +15044,10 @@ video {
 
 .m-auto {
   margin: auto;
+}
+
+.m-30vh {
+  margin: 30vh;
 }
 
 .m-px {
@@ -15306,6 +15314,16 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-30vh {
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+}
+
+.mx-30vh {
+  margin-left: 30vh;
+  margin-right: 30vh;
 }
 
 .my-px {
@@ -15800,6 +15818,22 @@ video {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mt-30vh {
+  margin-top: 30vh;
+}
+
+.mr-30vh {
+  margin-right: 30vh;
+}
+
+.mb-30vh {
+  margin-bottom: 30vh;
+}
+
+.ml-30vh {
+  margin-left: 30vh;
 }
 
 .mt-px {
@@ -45940,6 +45974,10 @@ video {
     height: 50vh;
   }
 
+  .sm\:h-90vh {
+    height: 90vh;
+  }
+
   .sm\:h-full {
     height: 100%;
   }
@@ -46142,6 +46180,10 @@ video {
 
   .sm\:m-auto {
     margin: auto;
+  }
+
+  .sm\:m-30vh {
+    margin: 30vh;
   }
 
   .sm\:m-px {
@@ -46408,6 +46450,16 @@ video {
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sm\:my-30vh {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+  }
+
+  .sm\:mx-30vh {
+    margin-left: 30vh;
+    margin-right: 30vh;
   }
 
   .sm\:my-px {
@@ -46902,6 +46954,22 @@ video {
 
   .sm\:ml-auto {
     margin-left: auto;
+  }
+
+  .sm\:mt-30vh {
+    margin-top: 30vh;
+  }
+
+  .sm\:mr-30vh {
+    margin-right: 30vh;
+  }
+
+  .sm\:mb-30vh {
+    margin-bottom: 30vh;
+  }
+
+  .sm\:ml-30vh {
+    margin-left: 30vh;
   }
 
   .sm\:mt-px {
@@ -76964,6 +77032,10 @@ video {
     height: 50vh;
   }
 
+  .md\:h-90vh {
+    height: 90vh;
+  }
+
   .md\:h-full {
     height: 100%;
   }
@@ -77166,6 +77238,10 @@ video {
 
   .md\:m-auto {
     margin: auto;
+  }
+
+  .md\:m-30vh {
+    margin: 30vh;
   }
 
   .md\:m-px {
@@ -77432,6 +77508,16 @@ video {
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:my-30vh {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+  }
+
+  .md\:mx-30vh {
+    margin-left: 30vh;
+    margin-right: 30vh;
   }
 
   .md\:my-px {
@@ -77926,6 +78012,22 @@ video {
 
   .md\:ml-auto {
     margin-left: auto;
+  }
+
+  .md\:mt-30vh {
+    margin-top: 30vh;
+  }
+
+  .md\:mr-30vh {
+    margin-right: 30vh;
+  }
+
+  .md\:mb-30vh {
+    margin-bottom: 30vh;
+  }
+
+  .md\:ml-30vh {
+    margin-left: 30vh;
   }
 
   .md\:mt-px {
@@ -107988,6 +108090,10 @@ video {
     height: 50vh;
   }
 
+  .lg\:h-90vh {
+    height: 90vh;
+  }
+
   .lg\:h-full {
     height: 100%;
   }
@@ -108190,6 +108296,10 @@ video {
 
   .lg\:m-auto {
     margin: auto;
+  }
+
+  .lg\:m-30vh {
+    margin: 30vh;
   }
 
   .lg\:m-px {
@@ -108456,6 +108566,16 @@ video {
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:my-30vh {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+  }
+
+  .lg\:mx-30vh {
+    margin-left: 30vh;
+    margin-right: 30vh;
   }
 
   .lg\:my-px {
@@ -108950,6 +109070,22 @@ video {
 
   .lg\:ml-auto {
     margin-left: auto;
+  }
+
+  .lg\:mt-30vh {
+    margin-top: 30vh;
+  }
+
+  .lg\:mr-30vh {
+    margin-right: 30vh;
+  }
+
+  .lg\:mb-30vh {
+    margin-bottom: 30vh;
+  }
+
+  .lg\:ml-30vh {
+    margin-left: 30vh;
   }
 
   .lg\:mt-px {
@@ -139012,6 +139148,10 @@ video {
     height: 50vh;
   }
 
+  .xl\:h-90vh {
+    height: 90vh;
+  }
+
   .xl\:h-full {
     height: 100%;
   }
@@ -139214,6 +139354,10 @@ video {
 
   .xl\:m-auto {
     margin: auto;
+  }
+
+  .xl\:m-30vh {
+    margin: 30vh;
   }
 
   .xl\:m-px {
@@ -139480,6 +139624,16 @@ video {
   .xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .xl\:my-30vh {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+  }
+
+  .xl\:mx-30vh {
+    margin-left: 30vh;
+    margin-right: 30vh;
   }
 
   .xl\:my-px {
@@ -139974,6 +140128,22 @@ video {
 
   .xl\:ml-auto {
     margin-left: auto;
+  }
+
+  .xl\:mt-30vh {
+    margin-top: 30vh;
+  }
+
+  .xl\:mr-30vh {
+    margin-right: 30vh;
+  }
+
+  .xl\:mb-30vh {
+    margin-bottom: 30vh;
+  }
+
+  .xl\:ml-30vh {
+    margin-left: 30vh;
   }
 
   .xl\:mt-px {

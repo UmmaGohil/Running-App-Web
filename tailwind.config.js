@@ -360,6 +360,7 @@ module.exports = {
       '11/12': '91.666667%',
       '20vh': '20vh',
       '50vh': '50vh',
+      '90vh': '90vh',
       full: '100%',
       screen: '100vw',
     }),
@@ -398,6 +399,7 @@ module.exports = {
     },
     margin: (theme, { negative }) => ({
       auto: 'auto',
+      '30vh': '30vh',
       ...theme('spacing'),
       ...negative(theme('spacing')),
     }),
