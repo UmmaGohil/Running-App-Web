@@ -3,7 +3,7 @@ import Page from '../template/page'
 
 const View = () => {
   return (
-    <Page bgColour="yourPink" title='View' homeBlockColour='red'>
+    <Page bgColour="yourPink" title='View' homeBlockColour='red' pageBlockColour='blue'>
       View
     </Page>
   )

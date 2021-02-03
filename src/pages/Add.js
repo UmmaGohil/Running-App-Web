@@ -3,7 +3,7 @@ import Page from '../template/page'
 
 const Add = () => {
   return (
-    <Page bgColour="bilobaFlower" title={'Add'} homeBlockColour='red'>
+    <Page bgColour="bilobaFlower" title={'Add'} homeBlockColour='red' pageBlockColour='blue'>
       Add
     </Page>
   )
