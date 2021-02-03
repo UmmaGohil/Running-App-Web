@@ -14,7 +14,7 @@ const Page = ({ children, bgColour, home, title, homeBlockColour }) => {
         </div>}
         <div className={titleBlock}>{title}{!home && <Nav />}</div>
         
-        {!home && <div className="h-50vh w-3/4 bg-green-500 z-0 ml-1/4 mt-1/10 mb-1/10"> 
+        {!home && <div className="h-70vh w-3/4 bg-green-500 z-0 ml-1/4 mt-1/50 mb-1/50"> 
           this is not home 
         </div>}
         {children}
