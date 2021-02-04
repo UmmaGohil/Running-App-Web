@@ -1,11 +1,10 @@
 import React from 'react'
 import Page from '../template/page'
-const Home = () => {
-  return (
-    <Page bgColour="darkPink" home={true} homeBlockColour='morePink'>
-      Home
-    </Page>
-  )
-}
+
+const Home = () => (
+  <Page bgColour="darkPink" home={true} homeBlockColour="morePink">
+    Home
+  </Page>
+)
 
 export default Home
