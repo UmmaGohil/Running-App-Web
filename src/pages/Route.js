@@ -1,5 +1,6 @@
 import React from 'react'
 import Page from '../template/page'
+import Buttons from '../components/Buttons'
 
 const Route = () => (
   <Page
@@ -9,6 +10,7 @@ const Route = () => (
     pageBlockColour="tan"
   >
     Route
+    <Buttons buttonFontColour="tan" />
   </Page>
 )
 

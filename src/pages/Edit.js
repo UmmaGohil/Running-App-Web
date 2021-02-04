@@ -1,5 +1,6 @@
 import React from 'react'
 import Page from '../template/page'
+import Buttons from '../components/Buttons'
 
 const Edit = () => (
   <Page
@@ -9,6 +10,7 @@ const Edit = () => (
     pageBlockColour="paleYellow"
   >
     Edit
+    <Buttons date={true} buttonFontColour="mint" />
   </Page>
 )
 
