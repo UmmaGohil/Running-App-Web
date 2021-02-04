@@ -14,7 +14,7 @@ const Nav = ({ homeText }) => {
   return (
     <>
       {text.map((a, indx) => (
-        <div className="z-20">
+        <div className={homeText ? 'z-20 ml-30vh' : 'z-20'}>
           <Link to={a}>
             <Icon style={{ fontSize: 50, color: 'white' }}>{icons[indx]}</Icon>
             {homeText && a}
