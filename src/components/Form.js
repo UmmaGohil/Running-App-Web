@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Form = ({ placeholderColour }) => {
+const Form = ({ placeholderColour, buttonTextColour }) => {
   const labelText =
     'block uppercase tracking-wide text-white text-xs font-bold mb-2'
 
   const placeholderText = `appearance-none block w-full bg-gray-200 text-${placeholderColour}-500 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
 
+  const buttonText = `bg-white hover:bg-blue-700 text-${buttonTextColour}-500 font-bold py-2 px-4 rounded-md`
   return (
     <form class="w-full ">
       <div class="flex flex-wrap -mx-3 mb-6">
@@ -129,6 +130,12 @@ const Form = ({ placeholderColour }) => {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <button class={buttonText}>Submit</button>
           </div>
         </div>
       </div>
