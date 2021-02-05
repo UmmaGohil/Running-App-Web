@@ -9,7 +9,6 @@ const View = () => (
     homeBlockColour="mint"
     pageBlockColour="paleYellow"
   >
-    View
     <Buttons date={true} buttonFontColour="mint" />
   </Page>
 )

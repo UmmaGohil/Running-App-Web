@@ -10,13 +10,30 @@ const Edit = () => (
     homeBlockColour="mint"
     pageBlockColour="paleYellow"
   >
-    Edit
-    <Buttons date={true} buttonFontColour="mint" />
-    <Form
-      placeholderColour="paleYellow"
-      buttonTextColour="paleYellow"
-      pointerColour="paleYellow"
-    />
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <Buttons date={true} buttonFontColour="mint" />
+        <br /> <br />
+        <Buttons date={true} buttonFontColour="mint" />
+        <br /> <br />
+        <Buttons date={true} buttonFontColour="mint" />
+        <br /> <br />
+        <Buttons date={true} buttonFontColour="mint" />
+        <br /> <br />
+        <Buttons date={true} buttonFontColour="mint" />
+        <br /> <br />
+        <Buttons date={true} buttonFontColour="mint" />
+        <br /> <br />
+        <Buttons date={true} buttonFontColour="mint" />
+      </div>
+      <div>
+        <Form
+          placeholderColour="paleYellow"
+          buttonTextColour="paleYellow"
+          pointerColour="paleYellow"
+        />
+      </div>
+    </div>
   </Page>
 )
 

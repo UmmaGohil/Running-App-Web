@@ -9,7 +9,6 @@ const Route = () => (
     homeBlockColour="dirtYellow"
     pageBlockColour="tan"
   >
-    Route
     <Buttons buttonFontColour="tan" />
   </Page>
 )
