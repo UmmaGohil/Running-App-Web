@@ -19,7 +19,7 @@ const Nav = ({ homeText }) => {
             <Icon style={{ fontSize: 50, color: 'white', marginRight: '1vw' }}>
               {icons[indx]}
             </Icon>
-            {homeText && ' ' && a}
+            {homeText && a}
           </Link>
         </div>
       ))}
