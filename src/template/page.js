@@ -27,7 +27,7 @@ const Page = ({
         )}
         <div className={titleBlock}>
           {home && <Nav homeText={'home-text'} />}
-          <p className="float-right mt-2vh p-4 text-white">{title}</p>
+          <p className="float-right mt-2vh p-4 pr-15 text-white">{title}</p>
           <div className="mt-4vh ml-1/40 w-1/10">{!home && <Nav />}</div>
         </div>
         {!home && <div className={pagesBlock}>{children}</div>}
