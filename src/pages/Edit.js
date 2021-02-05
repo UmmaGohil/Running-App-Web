@@ -12,22 +12,6 @@ const Edit = () => (
   >
     Edit
     <Buttons date={true} buttonFontColour="mint" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <Form
       placeholderColour="paleYellow"
       buttonTextColour="paleYellow"

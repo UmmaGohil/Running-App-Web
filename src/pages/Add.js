@@ -9,23 +9,6 @@ const Add = () => (
     homeBlockColour="mint"
     pageBlockColour="duskyBlue"
   >
-    Add
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <Form
       placeholderColour="duskyBlue"
       buttonTextColour="duskyBlue"
