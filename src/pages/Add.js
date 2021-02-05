@@ -26,7 +26,11 @@ const Add = () => (
     <br />
     <br />
     <br />
-    <Form placeholderColour="duskyBlue" buttonTextColour="duskyBlue" />
+    <Form
+      placeholderColour="duskyBlue"
+      buttonTextColour="duskyBlue"
+      pointerColour="duskyBlue"
+    />
   </Page>
 )
 

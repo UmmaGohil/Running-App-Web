@@ -28,7 +28,11 @@ const Edit = () => (
     <br />
     <br />
     <br />
-    <Form placeholderColour="paleYellow" buttonTextColour="paleYellow" />
+    <Form
+      placeholderColour="paleYellow"
+      buttonTextColour="paleYellow"
+      pointerColour="paleYellow"
+    />
   </Page>
 )
 

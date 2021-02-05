@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Form = ({ placeholderColour, buttonTextColour }) => {
+const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
   const labelText =
     'block uppercase tracking-wide text-white text-xs font-bold mb-2'
 
-  const placeholderText = `appearance-none block w-full bg-gray-200 text-${placeholderColour}-500 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
+  const placeholderText = `appearance-none block w-full bg-gray-200 text-${placeholderColour}-500 border border-gray-200 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
 
   const buttonText = `bg-white hover:bg-blue-700 text-${buttonTextColour}-500 font-bold py-2 px-4 rounded-md`
+
+  const pointerSVG = `pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-${pointerColour}-500`
   return (
     <form class="w-full ">
       <div class="flex flex-wrap -mx-3 mb-6">
@@ -33,7 +35,7 @@ const Form = ({ placeholderColour, buttonTextColour }) => {
               <option>Missouri</option>
               <option>Texas</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <div class={pointerSVG}>
               <svg
                 class="fill-current h-4 w-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +58,7 @@ const Form = ({ placeholderColour, buttonTextColour }) => {
               <option>Missouri</option>
               <option>Texas</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <div class={pointerSVG}>
               <svg
                 class="fill-current h-4 w-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +81,7 @@ const Form = ({ placeholderColour, buttonTextColour }) => {
               <option>Missouri</option>
               <option>Texas</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <div class={pointerSVG}>
               <svg
                 class="fill-current h-4 w-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +102,7 @@ const Form = ({ placeholderColour, buttonTextColour }) => {
               <option>Missouri</option>
               <option>Texas</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <div class={pointerSVG}>
               <svg
                 class="fill-current h-4 w-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +123,7 @@ const Form = ({ placeholderColour, buttonTextColour }) => {
               <option>Missouri</option>
               <option>Texas</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <div class={pointerSVG}>
               <svg
                 class="fill-current h-4 w-4"
                 xmlns="http://www.w3.org/2000/svg"
