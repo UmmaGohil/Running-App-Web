@@ -4,7 +4,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
   const labelText =
     'block uppercase tracking-wide text-white text-xs font-bold mb-2'
 
-  const placeholderText = `appearance-none block w-full bg-gray-200 text-${placeholderColour}-500 border border-gray-200 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
+  const placeholderText = `appearance-none block w-full bg-white text-${placeholderColour}-500 border border-gray-200 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
 
   const buttonText = `bg-white hover:bg-blue-700 text-${buttonTextColour}-500 font-bold py-2 px-4 rounded-md`
 
