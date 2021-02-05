@@ -1,37 +1,33 @@
 import React from 'react'
 
-const Form = () => {
+const Form = ({ placeholderColour }) => {
+  const labelText =
+    'block uppercase tracking-wide text-white text-xs font-bold mb-2'
+
+  const placeholderText = `appearance-none block w-full bg-gray-200 text-${placeholderColour}-500 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
+
   return (
-    <form class="w-full max-w-lg">
+    <form class="w-full ">
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-title"
-          >
+          <label class={labelText} for="grid-title">
             Title
           </label>
           <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            class={placeholderText}
             id="grid-password"
             type="text"
-            placeholder="title"
+            placeholder="Title"
           />
         </div>
       </div>
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-time"
-          >
+          <label class={labelText} for="grid-time">
             Time
           </label>
           <div class="relative">
-            <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-state"
-            >
+            <select class={placeholderText} id="grid-state">
               <option>New Mexico</option>
               <option>Missouri</option>
               <option>Texas</option>
@@ -50,17 +46,11 @@ const Form = () => {
       </div>
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-time"
-          >
+          <label class={labelText} for="grid-time">
             Distance
           </label>
           <div class="relative">
-            <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-state"
-            >
+            <select class={placeholderText} id="grid-state">
               <option>New Mexico</option>
               <option>Missouri</option>
               <option>Texas</option>
@@ -79,17 +69,11 @@ const Form = () => {
       </div>
       <div class="flex flex-wrap -mx-3 mb-2">
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-state"
-          >
+          <label class={labelText} for="grid-state">
             Walk
           </label>
           <div class="relative">
-            <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-state"
-            >
+            <select class={placeholderText} id="grid-state">
               <option>New Mexico</option>
               <option>Missouri</option>
               <option>Texas</option>
@@ -106,17 +90,11 @@ const Form = () => {
           </div>
         </div>
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-state"
-          >
+          <label class={labelText} for="grid-state">
             Power Walk
           </label>
           <div class="relative">
-            <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-state"
-            >
+            <select class={placeholderText} id="grid-state">
               <option>New Mexico</option>
               <option>Missouri</option>
               <option>Texas</option>
@@ -133,17 +111,11 @@ const Form = () => {
           </div>
         </div>
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-          <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            for="grid-state"
-          >
+          <label class={labelText} for="grid-state">
             Run
           </label>
           <div class="relative">
-            <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-state"
-            >
+            <select class={placeholderText} id="grid-state">
               <option>New Mexico</option>
               <option>Missouri</option>
               <option>Texas</option>

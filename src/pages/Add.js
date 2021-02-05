@@ -26,7 +26,7 @@ const Add = () => (
     <br />
     <br />
     <br />
-    <Form />
+    <Form placeholderColour="duskyBlue" />
   </Page>
 )
 
