@@ -1,7 +1,6 @@
 import React from 'react'
 import Page from '../template/page'
 import Buttons from '../components/Buttons'
-import Form from '../components/Form'
 
 const View = () => (
   <Page
@@ -12,23 +11,6 @@ const View = () => (
   >
     View
     <Buttons date={true} buttonFontColour="mint" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <Form />
   </Page>
 )
 

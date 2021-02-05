@@ -15,7 +15,7 @@ const Page = ({
     ? `h-50vh w-2/4 bg-${homeBlockColour}-400 text-6xl text-white z-10 absolute top-0 mt-30vh`
     : `h-20vh w-2/4 bg-${homeBlockColour}-500 text-6xl z-10 absolute top-0 mt-25vh`
 
-  const pagesBlock = `h-70vh w-3/4 bg-${pageBlockColour}-500 z-0 ml-1/4 mt-1/50 mb-1/50`
+  const pagesBlock = `h-70vh w-3/4 bg-${pageBlockColour}-500 z-10 ml-1/4 mt-1/50 mb-1/50`
 
   return (
     <div className={pageVar}>
@@ -28,7 +28,7 @@ const Page = ({
         <div className={titleBlock}>
           {home && <Nav homeText={'home-text'} />}
           <p className="float-right mt-6vh p-4 text-white">{title}</p>
-          <div className="mt-8vh ml-1/40 ">{!home && <Nav />}</div>
+          <div className="mt-8vh ml-1/40 w-1/10">{!home && <Nav />}</div>
         </div>
         {!home && <div className={pagesBlock}>{children}</div>}
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Page from '../template/page'
+import Form from '../components/Form'
 
 const Add = () => (
   <Page
@@ -9,6 +10,23 @@ const Add = () => (
     pageBlockColour="duskyBlue"
   >
     Add
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <Form />
   </Page>
 )
 
