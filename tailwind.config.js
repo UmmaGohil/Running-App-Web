@@ -6,8 +6,8 @@ module.exports = {
   separator: ':',
   theme: {
     screens: {
-      sm: '640px',
-      md: '850px',
+      sm: '400px',
+      md: '900px',
       lg: '1024px',
       xl: '1280px',
     },
@@ -476,6 +476,7 @@ module.exports = {
       '5vh': '5vh',
       '6vh': '6vh',
       '8vh': '8vh',
+      '10vh': '10vh',
       '15vh': '15vh',
       '19vh': '19vh',
       '25vh': '25vh',
@@ -846,7 +847,7 @@ module.exports = {
     lineHeight: ['responsive'],
     listStylePosition: ['responsive'],
     listStyleType: ['responsive'],
-    margin: ['responsive'],
+    margin: ['responsive', 'important'],
     maxHeight: ['responsive'],
     maxWidth: ['responsive'],
     minHeight: ['responsive'],
@@ -903,5 +904,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwindcss-important')()],
 }
