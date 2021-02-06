@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     screens: {
       sm: '640px',
-      md: '768px',
+      md: '850px',
       lg: '1024px',
       xl: '1280px',
     },
@@ -430,10 +430,11 @@ module.exports = {
       '15vh': '15vh',
       '20vh': '20vh',
       '50vh': '50vh',
+      '60vh': '60vh',
       '70vh': '70vh',
       '90vh': '90vh',
       full: '100%',
-      screen: '100vw',
+      screen: '100vh',
     }),
     inset: {
       0: '0',
@@ -479,7 +480,9 @@ module.exports = {
       '19vh': '19vh',
       '25vh': '25vh',
       '30vh': '30vh',
-      '20vw': '20vw',
+      '40vh': '40vh',
+      '20vw:': '20vw',
+      '20vh': '20vh',
       '60vw': '60vw',
       '1/4': '25%',
       '1/50': '5%',
