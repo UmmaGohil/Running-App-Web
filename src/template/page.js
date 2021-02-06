@@ -13,7 +13,7 @@ const Page = ({
 
   const titleBlock = home
     ? `xl:h-70vh h-60vh w-2/4 bg-${homeBlockColour}-400 xl:text-6xl text-5xl text-white z-10 absolute top-0 xl:mt-15vh mt-20vh`
-    : `h-15vh w-2/4 bg-${homeBlockColour}-500 text-6xl z-10 absolute top-0 xl:mt-19vh lg:mt-15vh`
+    : `h-15vh w-2/4 bg-${homeBlockColour}-500 text-6xl z-10 absolute top-0 xl:mt-19vh mt-15vh`
 
   const pagesBlock = `h-70vh w-3/4 bg-${pageBlockColour}-500 z-10 ml-1/4 mt-1/50 mb-1/50 pt-60 px-12`
 
