@@ -335,6 +335,8 @@ module.exports = {
       '60vh': '60vh',
       '70vh': '70vh',
       '90vh': '90vh',
+      '95vh': '95vh',
+      '104vh': '104vh',
       full: '100%',
       screen: '100vh',
     }),
