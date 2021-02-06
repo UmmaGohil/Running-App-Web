@@ -483,6 +483,7 @@ module.exports = {
       '30vh': '30vh',
       '40vh': '40vh',
       '20vw:': '20vw',
+      '27vh': '27vh',
       '20vh': '20vh',
       '60vw': '60vw',
       '1/4': '25%',
@@ -847,7 +848,7 @@ module.exports = {
     lineHeight: ['responsive'],
     listStylePosition: ['responsive'],
     listStyleType: ['responsive'],
-    margin: ['responsive', 'important'],
+    margin: ['responsive'],
     maxHeight: ['responsive'],
     maxWidth: ['responsive'],
     minHeight: ['responsive'],
@@ -904,5 +905,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('tailwindcss-important')()],
+  plugins: [],
 }
