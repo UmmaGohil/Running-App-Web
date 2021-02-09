@@ -6,7 +6,8 @@ const Buttons = ({ dateText, title, buttonFontColour }) => {
   return (
     <button class={styles}>
       {title}
-      {dateText}
+
+      {'|' + dateText}
     </button>
   )
 }
