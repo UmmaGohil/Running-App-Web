@@ -11,7 +11,7 @@ const RunButtons = ({ buttonFontColour, date }) => {
           date={true}
           buttonFontColour={buttonFontColour}
           title={a.name}
-          dateText={a.date}
+          dateText={date ? a.date : ' '}
         />
       ))}
     </>
