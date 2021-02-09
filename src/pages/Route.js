@@ -10,7 +10,7 @@ const Route = () => (
     pageBlockColour="tan"
   >
     <div class="grid grid-cols-2 gap-4">
-      <div>
+      <div className="lg:-mt-155 md:mt-0 xxl:mt-0">
         <Buttons buttonFontColour="tan" />
         <br />
         <br />
