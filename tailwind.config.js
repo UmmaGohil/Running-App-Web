@@ -6,7 +6,7 @@ module.exports = {
   separator: ':',
   theme: {
     screens: {
-      sm: '400px',
+      sm: '500px',
       md: '900px',
       lg: '1024px',
       xl: '1280px',
@@ -164,6 +164,7 @@ module.exports = {
       56: '14rem',
       60: '15rem',
       64: '16rem',
+      155: '15vh',
     },
 
     backgroundColor: (theme) => theme('colors'),
@@ -329,11 +330,13 @@ module.exports = {
       '9/12': '75%',
       '10/12': '83.333333%',
       '11/12': '91.666667%',
+      '-15vh': '-15vh',
       '15vh': '15vh',
       '20vh': '20vh',
       '50vh': '50vh',
       '60vh': '60vh',
       '70vh': '70vh',
+      '80vh': '80vh',
       '90vh': '90vh',
       '95vh': '95vh',
       '104vh': '104vh',

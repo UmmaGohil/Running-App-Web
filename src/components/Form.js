@@ -10,7 +10,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
 
   const pointerSVG = `pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-${pointerColour}-500`
   return (
-    <form class="w-full ">
+    <form class="w-full lg:-mt-155 md:mt-0 xxl:mt-0">
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">
           <label class={labelText} for="grid-title">

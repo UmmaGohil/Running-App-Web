@@ -11,7 +11,7 @@ const Edit = () => (
     pageBlockColour="paleYellow"
   >
     <div class="grid grid-cols-2 gap-4">
-      <div>
+      <div className="lg:-mt-155 md:mt-0 xxl:mt-0">
         <Buttons date={true} buttonFontColour="mint" />
         <br /> <br />
         <Buttons date={true} buttonFontColour="mint" />
