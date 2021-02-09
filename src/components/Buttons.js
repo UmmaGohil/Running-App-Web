@@ -7,7 +7,7 @@ const Buttons = ({ dateText, title, buttonFontColour }) => {
     <button className={styles}>
       {title}
 
-      {' | ' + dateText}
+      {dateText}
     </button>
   )
 }
