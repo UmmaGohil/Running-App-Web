@@ -1,20 +1,21 @@
 import React from 'react'
 import Button from './Buttons'
-import Data from '../data/data.json'
-//TO DO: Add the data file here and map over the data and use the prop to send down the date and title?
+import useData from '../data/useData'
 
 const RunButtons = ({ buttonFontColour, date, test }) => {
+  const { status, data, error, isFetching } = useData()
   return (
     <>
-      {Data.runs.map((a) => (
-        <Button
-          date={true}
-          buttonFontColour={buttonFontColour}
-          title={a.name}
-          dateText={date ? ' | ' + a.date : ' '}
-          test={test}
-        />
-      ))}
+      {data &&
+        data.runs.map((a) => (
+          <Button
+            date={true}
+            buttonFontColour={buttonFontColour}
+            title={a.name}
+            dateText={date ? ' | ' + a.date : ' '}
+            test={test}
+          />
+        ))}
     </>
   )
 }
