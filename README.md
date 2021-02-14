@@ -1,31 +1,28 @@
-# React Template
+# 🏃‍♀️Running App UI
 
-An over-engineered but work in progress React template.
+This web app enables uers to add, edit and view running routines.
+
+### 📋Aims of App
+
+- Allow the user to have flexibility with their running routine; add various different functions such as run/walk/power for varied times
+- The user can add/delete/edit routines
+- The user can view previous routines
+- The user can view previous runs and details such as time and route
 
 ### 👩‍💻Technical Details
 
-- This template uses webpack and settings can be found in `webpack.config.js` and `package.json`
-
-- Hooks/Context is used for state management
-
-- Styling has been implemented via Tailwind
-
-- This project also includes React testing-library set up
-
-- Lighthouse ci is included, run `lhci autorun` to view reports.
-
-- GraphQL has been added to experiment with querying data
+- ReactJS
+- Webpack
+- React-Query
+- Tailwind CSS
+- React testing-library
 
 ### 🔧How to Run the App
 
-- `yarn`
+- Clone the repo
+- `cd` into the directory
+- Run `yarn` and then `yarn start` in your terminal
 
-- `yarn start`
+### 💭Future Improvements
 
-- `yarn run test` or `jest` to run example test
-
-### 💭Additional Features to be Implemented
-
-- Write test cases for `Page.js`
-
-- Fix Lighthouse CI
+- Improve the responsive design
