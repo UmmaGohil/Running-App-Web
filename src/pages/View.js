@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Page from '../template/page'
 import RunButtons from '../components/RunButtons'
 import RunDetails from '../components/RunDetails'
 
 const View = () => {
-  const testing = () => {
-    console.log('testing')
+  const [state, setState] = useState({ data: '' })
+
+  const changeState = () => {
+    setState({ data: `button click change` })
   }
   return (
     <Page
@@ -16,10 +18,10 @@ const View = () => {
     >
       <div class="grid grid-cols-2 gap-4">
         <div className="lg:-mt-155 md:mt-0 xxl:mt-0">
-          <RunButtons date={true} buttonFontColour="mint" test={testing} />
+          <RunButtons date={true} buttonFontColour="mint" test={changeState} />
         </div>
         <div>
-          <RunDetails />
+          <RunDetails data={state.data} />
         </div>
       </div>
     </Page>
