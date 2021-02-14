@@ -6,16 +6,15 @@ const RunButtons = ({ buttonFontColour, date, test }) => {
   const { status, data, error, isFetching } = useData()
   return (
     <>
-      {data &&
-        data.runs.map((a) => (
-          <Button
-            date={true}
-            buttonFontColour={buttonFontColour}
-            title={a.name}
-            dateText={date ? ' | ' + a.date : ' '}
-            test={test}
-          />
-        ))}
+      {data?.runs.map((a) => (
+        <Button
+          date={true}
+          buttonFontColour={buttonFontColour}
+          title={a.name}
+          dateText={date ? ' | ' + a.date : ' '}
+          test={test}
+        />
+      ))}
     </>
   )
 }
