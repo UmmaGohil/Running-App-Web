@@ -21,12 +21,24 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
   const [submitting, setSubmitting] = useState(false)
 
   const handleSubmit = (e) => {
+    fetch(
+      'https://yqupgbkal5.execute-api.eu-central-1.amazonaws.com/latest/api/runs',
+      {
+        method: 'POST',
+        // We convert the React state to JSON and send it as the POST body
+        body: JSON.stringify(this.state),
+      }
+    ).then(function (response) {
+      console.log(response)
+      return response.json()
+    })
+
     e.preventDefault()
     setSubmitting(true)
     console.log('it works')
     setTimeout(() => {
       setSubmitting({ reset: true })
-    }, 3000)
+    }, 6000)
   }
 
   const handleChange = (e) => {
@@ -60,7 +72,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
               placeholder="Title"
               onChange={handleChange}
               name="title"
-              value={formData.title || ''}
+              value={formData.title}
             />
           </div>
         </div>
@@ -74,7 +86,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 class={placeholderText}
                 id="grid-state"
                 onChange={handleChange}
-                value={formData.time || ''}
+                value={formData.time}
                 name="time"
               >
                 <option>New Mexico</option>
@@ -103,7 +115,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 class={placeholderText}
                 id="grid-state"
                 onChange={handleChange}
-                value={formData.distance || ''}
+                value={formData.distance}
                 name="distance"
               >
                 <option>New Mexico</option>
@@ -132,7 +144,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 class={placeholderText}
                 id="grid-state"
                 onChange={handleChange}
-                value={formData.walk || ''}
+                value={formData.walk}
                 name="walk"
               >
                 <option>New Mexico</option>
@@ -186,7 +198,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 class={placeholderText}
                 id="grid-state"
                 onChange={handleChange}
-                value={formData.run || ''}
+                value={formData.run}
                 name="run"
               >
                 <option>New Mexico</option>
