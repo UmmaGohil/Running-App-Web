@@ -124,9 +124,16 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 value={formData.distance}
                 name="distance"
               >
-                <option>New Mexico</option>
-                <option>Missouri</option>
-                <option>Texas</option>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+                <option>50</option>
+                <option>60</option>
+                <option>70</option>
+                <option>80</option>
+                <option>90</option>
+                <option>100</option>
               </select>
               {SVG}
             </div>
@@ -144,11 +151,18 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                   id="grid-state"
                   onChange={handleChange}
                   value={formData.a}
-                  name="walk"
+                  name={a}
                 >
-                  <option>New Mexico</option>
-                  <option>Missouri</option>
-                  <option>Texas</option>
+                  <option>10</option>
+                  <option>20</option>
+                  <option>30</option>
+                  <option>40</option>
+                  <option>50</option>
+                  <option>60</option>
+                  <option>70</option>
+                  <option>80</option>
+                  <option>90</option>
+                  <option>100</option>
                 </select>
                 {SVG}
               </div>
