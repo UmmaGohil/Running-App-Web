@@ -26,13 +26,13 @@ const Nav = ({ homeText }) => {
             </Link>
           </div>
         ) : (
-          <>
+          <div className="z-20 xxl:ml-0 md:ml-10vh sm:ml-5vh">
             <Link to={a}>
               <Icon style={{ fontSize: 50, color: 'white' }}>
                 {icons[indx]}
               </Icon>
             </Link>
-          </>
+          </div>
         )
       )}
     </>
