@@ -12414,6 +12414,10 @@ video {
   height: -15vh;
 }
 
+.h-17vh {
+  height: 17vh;
+}
+
 .h-15vh {
   height: 15vh;
 }
@@ -12426,12 +12430,20 @@ video {
   height: 50vh;
 }
 
+.h-65vh {
+  height: 65vh;
+}
+
 .h-60vh {
   height: 60vh;
 }
 
 .h-70vh {
   height: 70vh;
+}
+
+.h-85vh {
+  height: 85vh;
 }
 
 .h-80vh {
@@ -40116,6 +40128,10 @@ video {
     height: -15vh;
   }
 
+  .sm\:h-17vh {
+    height: 17vh;
+  }
+
   .sm\:h-15vh {
     height: 15vh;
   }
@@ -40128,12 +40144,20 @@ video {
     height: 50vh;
   }
 
+  .sm\:h-65vh {
+    height: 65vh;
+  }
+
   .sm\:h-60vh {
     height: 60vh;
   }
 
   .sm\:h-70vh {
     height: 70vh;
+  }
+
+  .sm\:h-85vh {
+    height: 85vh;
   }
 
   .sm\:h-80vh {
@@ -67740,6 +67764,10 @@ video {
     height: -15vh;
   }
 
+  .md\:h-17vh {
+    height: 17vh;
+  }
+
   .md\:h-15vh {
     height: 15vh;
   }
@@ -67752,12 +67780,20 @@ video {
     height: 50vh;
   }
 
+  .md\:h-65vh {
+    height: 65vh;
+  }
+
   .md\:h-60vh {
     height: 60vh;
   }
 
   .md\:h-70vh {
     height: 70vh;
+  }
+
+  .md\:h-85vh {
+    height: 85vh;
   }
 
   .md\:h-80vh {
@@ -95364,6 +95400,10 @@ video {
     height: -15vh;
   }
 
+  .lg\:h-17vh {
+    height: 17vh;
+  }
+
   .lg\:h-15vh {
     height: 15vh;
   }
@@ -95376,12 +95416,20 @@ video {
     height: 50vh;
   }
 
+  .lg\:h-65vh {
+    height: 65vh;
+  }
+
   .lg\:h-60vh {
     height: 60vh;
   }
 
   .lg\:h-70vh {
     height: 70vh;
+  }
+
+  .lg\:h-85vh {
+    height: 85vh;
   }
 
   .lg\:h-80vh {
@@ -122988,6 +123036,10 @@ video {
     height: -15vh;
   }
 
+  .xl\:h-17vh {
+    height: 17vh;
+  }
+
   .xl\:h-15vh {
     height: 15vh;
   }
@@ -123000,12 +123052,20 @@ video {
     height: 50vh;
   }
 
+  .xl\:h-65vh {
+    height: 65vh;
+  }
+
   .xl\:h-60vh {
     height: 60vh;
   }
 
   .xl\:h-70vh {
     height: 70vh;
+  }
+
+  .xl\:h-85vh {
+    height: 85vh;
   }
 
   .xl\:h-80vh {
@@ -150612,6 +150672,10 @@ video {
     height: -15vh;
   }
 
+  .xxl\:h-17vh {
+    height: 17vh;
+  }
+
   .xxl\:h-15vh {
     height: 15vh;
   }
@@ -150624,12 +150688,20 @@ video {
     height: 50vh;
   }
 
+  .xxl\:h-65vh {
+    height: 65vh;
+  }
+
   .xxl\:h-60vh {
     height: 60vh;
   }
 
   .xxl\:h-70vh {
     height: 70vh;
+  }
+
+  .xxl\:h-85vh {
+    height: 85vh;
   }
 
   .xxl\:h-80vh {
