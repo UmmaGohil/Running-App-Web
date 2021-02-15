@@ -70,6 +70,21 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
 
   const runData = ['walk', 'powerWalk', 'run']
 
+  const options = (
+    <>
+      <option>10</option>
+      <option>20</option>
+      <option>30</option>
+      <option>40</option>
+      <option>50</option>
+      <option>60</option>
+      <option>70</option>
+      <option>80</option>
+      <option>90</option>
+      <option>100</option>
+    </>
+  )
+
   return (
     <>
       {submitting && <div>Submitting form...</div>}
@@ -103,16 +118,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 value={formData.time}
                 name="time"
               >
-                <option>10</option>
-                <option>20</option>
-                <option>30</option>
-                <option>40</option>
-                <option>50</option>
-                <option>60</option>
-                <option>70</option>
-                <option>80</option>
-                <option>90</option>
-                <option>100</option>
+                {options}
               </select>
               {SVG}
             </div>
@@ -131,15 +137,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 value={formData.distance}
                 name="distance"
               >
-                <option>10</option>
-                <option>20</option>
-                <option>30</option>
-                <option>40</option>
-                <option>50</option>
-                <option>60</option>
-                <option>70</option>
-                <option>80</option>
-                <option>90</option>
+                {options}
                 <option>100</option>
               </select>
               {SVG}
@@ -160,16 +158,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                   value={formData.a}
                   name={a}
                 >
-                  <option>10</option>
-                  <option>20</option>
-                  <option>30</option>
-                  <option>40</option>
-                  <option>50</option>
-                  <option>60</option>
-                  <option>70</option>
-                  <option>80</option>
-                  <option>90</option>
-                  <option>100</option>
+                  {options}
                 </select>
                 {SVG}
               </div>
