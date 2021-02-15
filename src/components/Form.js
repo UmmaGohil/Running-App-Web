@@ -56,11 +56,25 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
 
   const pointerSVG = `pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-${pointerColour}-500`
 
+  const SVG = (
+    <div class={pointerSVG}>
+      <svg
+        class="fill-current h-4 w-4"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+      </svg>
+    </div>
+  )
+
+  const runData = ['walk', 'powerWalk', 'run']
+
   return (
     <>
       {submitting && <div>Submitting form...</div>}
       <form class="w-full lg:-mt-155 md:mt-0 xxl:mt-0" onSubmit={handleSubmit}>
-        <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="flex flex-wrap -mx-3 mb-3">
           <div class="w-full px-3">
             <label class={labelText} for="grid-title">
               Title
@@ -76,7 +90,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
             />
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="flex flex-wrap -mx-3 mb-3">
           <div class="w-full px-3">
             <label class={labelText} for="grid-time">
               Time
@@ -93,19 +107,11 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 <option>Missouri</option>
                 <option>Texas</option>
               </select>
-              <div class={pointerSVG}>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </div>
+              {SVG}
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="flex flex-wrap -mx-3 mb-3">
           <div class="w-full px-3">
             <label class={labelText} for="grid-time">
               Distance
@@ -122,107 +128,39 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 <option>Missouri</option>
                 <option>Texas</option>
               </select>
-              <div class={pointerSVG}>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </div>
+              {SVG}
             </div>
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-2">
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label class={labelText} for="grid-state">
-              Walk
-            </label>
-            <div class="relative">
-              <select
-                class={placeholderText}
-                id="grid-state"
-                onChange={handleChange}
-                value={formData.walk}
-                name="walk"
-              >
-                <option>New Mexico</option>
-                <option>Missouri</option>
-                <option>Texas</option>
-              </select>
-              <div class={pointerSVG}>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
+          {runData.map((a) => (
+            <div class="w-full md:w-1/3 px-3 mb-3 md:mb-0">
+              <label class={labelText} for="grid-state">
+                {a}
+              </label>
+              <div class="relative">
+                <select
+                  class={placeholderText}
+                  id="grid-state"
+                  onChange={handleChange}
+                  value={formData.a}
+                  name="walk"
                 >
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
+                  <option>New Mexico</option>
+                  <option>Missouri</option>
+                  <option>Texas</option>
+                </select>
+                {SVG}
               </div>
             </div>
-          </div>
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label class={labelText} for="grid-state">
-              Power Walk
-            </label>
-            <div class="relative">
-              <select
-                class={placeholderText}
-                id="grid-state"
-                onChange={handleChange}
-                value={formData.powerWalk || ''}
-                name="powerWalk"
-              >
-                <option>New Mexico</option>
-                <option>Missouri</option>
-                <option>Texas</option>
-              </select>
-              <div class={pointerSVG}>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label class={labelText} for="grid-state">
-              Run
-            </label>
-            <div class="relative">
-              <select
-                class={placeholderText}
-                id="grid-state"
-                onChange={handleChange}
-                value={formData.run}
-                name="run"
-              >
-                <option>New Mexico</option>
-                <option>Missouri</option>
-                <option>Texas</option>
-              </select>
-              <div class={pointerSVG}>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </div>
-            </div>
-          </div>
+          ))}
+        </div>
 
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
-              <button class={buttonText} type="submit">
-                Submit
-              </button>
-            </div>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <button class={buttonText} type="submit">
+              Submit
+            </button>
           </div>
         </div>
       </form>

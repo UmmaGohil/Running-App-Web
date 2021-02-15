@@ -2,7 +2,7 @@ import { useQuery } from 'react-query'
 import axios from 'axios'
 
 const postData = async () => {
-  const { data } = await axios.post(
+  const { data } = axios.post(
     'https://yqupgbkal5.execute-api.eu-central-1.amazonaws.com/latest/api/runs'
   )
   return data
