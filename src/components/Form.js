@@ -25,8 +25,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
       'https://yqupgbkal5.execute-api.eu-central-1.amazonaws.com/latest/api/runs',
       {
         method: 'POST',
-        // We convert the React state to JSON and send it as the POST body
-        body: JSON.stringify(this.state),
+        body: JSON.stringify(setFormData),
       }
     ).then(function (response) {
       console.log(response)
@@ -35,10 +34,9 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
 
     e.preventDefault()
     setSubmitting(true)
-    console.log('it works')
     setTimeout(() => {
       setSubmitting({ reset: true })
-    }, 6000)
+    })
   }
 
   const handleChange = (e) => {
@@ -138,7 +136,6 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
                 name="distance"
               >
                 {options}
-                <option>100</option>
               </select>
               {SVG}
             </div>
@@ -165,7 +162,6 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
             </div>
           ))}
         </div>
-
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full px-3">
             <button class={buttonText} type="submit">
