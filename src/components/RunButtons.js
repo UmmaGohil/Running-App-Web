@@ -6,15 +6,21 @@ const RunButtons = ({ buttonFontColour, date, test }) => {
   const { status, data, error, isFetching } = useData()
   return (
     <>
-      {data?.runs.map((a) => (
-        <Button
-          date={true}
-          buttonFontColour={buttonFontColour}
-          title={a.name}
-          dateText={date ? ' | ' + a.date : ' '}
-          test={test}
-        />
-      ))}
+      {status === 'loading' ? (
+        'Loading...'
+      ) : status === 'error' ? (
+        <span>Error: {error.message}</span>
+      ) : (
+        data?.runs.map((a) => (
+          <Button
+            date={true}
+            buttonFontColour={buttonFontColour}
+            title={a.name}
+            dateText={date ? ' | ' + a.date : ' '}
+            test={test}
+          />
+        ))
+      )}
     </>
   )
 }
