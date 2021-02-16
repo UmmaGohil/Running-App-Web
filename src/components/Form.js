@@ -22,7 +22,7 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
 
   const handleSubmit = (e) => {
     fetch(
-      'https://yqupgbkal5.execute-api.eu-central-1.amazonaws.com/latest/api/runs',
+      'https://yqupgbkal5.execute-api.eu-central-1.amazonaws.com/latest/api/run',
       {
         method: 'POST',
         body: JSON.stringify(setFormData),
