@@ -1,16 +1,21 @@
 import React from 'react'
 import Nav from '../components/Nav'
-import { render } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import { createMemoryHistory } from 'history'
-import { Link } from 'react-router-dom'
+
+import { Link, Router } from 'react-router-dom'
 
 describe('App component', () => {
   it('routes to a new route', async () => {
-    const history = createMemoryHistory()
+    const newHistory = createMemoryHistory()
 
     history.push = jest.fn()
 
-    const { getByText } = render(<Link to="/hello">Click me</Link>)
+    const { getByText } = render(
+      <Router history={newHistory}>
+        <Link to="/hello">Click me</Link>
+      </Router>
+    )
 
     fireEvent.click(getByText('Click me'))
 
@@ -18,10 +23,16 @@ describe('App component', () => {
   })
   //to do: check for icons
   it('should have the css classes', () => {
-    const { container } = render(<Nav />)
+    const newHistory = createMemoryHistory()
+
+    history.push = jest.fn()
+    const { container } = render(
+      <Router history={newHistory}>
+        <Nav />
+      </Router>
+    )
     expect(container.firstChild).toHaveClass(
-      'z-20 xl:ml-40vh lg:ml-30vh md:ml-20vh sm:ml-10vh mb-5vh'
+      'z-20 xxl:ml-0 md:ml-10vh sm:ml-5vh'
     )
   })
-  afterAll(cleanup)
 })

@@ -19,6 +19,7 @@ const Nav = ({ homeText }) => {
             <Link to={a}>
               <Icon
                 style={{ fontSize: 50, color: 'white', marginRight: '1vw' }}
+                key={a}
               >
                 {icons[indx]}
               </Icon>
@@ -28,7 +29,7 @@ const Nav = ({ homeText }) => {
         ) : (
           <div className="z-20 xxl:ml-0 md:ml-10vh sm:ml-5vh">
             <Link to={a}>
-              <Icon style={{ fontSize: 50, color: 'white' }}>
+              <Icon style={{ fontSize: 50, color: 'white' }} key={a}>
                 {icons[indx]}
               </Icon>
             </Link>
