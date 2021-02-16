@@ -3,7 +3,7 @@ import Button from './Buttons'
 import useData from '../data/useData'
 
 const RunButtons = ({ buttonFontColour, date, test }) => {
-  const { status, data, error, isFetching } = useData()
+  const { status, data, error } = useData()
   return (
     <>
       {status === 'loading' ? (
