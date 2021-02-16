@@ -21,8 +21,10 @@ This web app enables uers to add, edit and view running routines.
 
 - Clone the repo
 - `cd` into the directory
-- Run `yarn` and then `yarn start` in your terminal
+- Run `yarn` and then `yarn start` in the terminal
 
 ### 💭Future Improvements
 
 - Improve the responsive design
+- Move POST to react-query
+- Fix RunDetails test
