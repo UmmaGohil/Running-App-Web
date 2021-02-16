@@ -55,9 +55,9 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
   const pointerSVG = `pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-${pointerColour}-500`
 
   const SVG = (
-    <div class={pointerSVG}>
+    <div classNameName={pointerSVG}>
       <svg
-        class="fill-current h-4 w-4"
+        classNameName="fill-current h-4 w-4"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
       >
@@ -86,14 +86,17 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
   return (
     <>
       {submitting && <div>Submitting form...</div>}
-      <form class="w-full lg:-mt-155 md:mt-0 xxl:mt-0" onSubmit={handleSubmit}>
-        <div class="flex flex-wrap -mx-3 mb-3">
-          <div class="w-full px-3">
-            <label class={labelText} for="grid-title">
+      <form
+        className="w-full lg:-mt-155 md:mt-0 xxl:mt-0"
+        onSubmit={handleSubmit}
+      >
+        <div className="flex flex-wrap -mx-3 mb-3">
+          <div className="w-full px-3">
+            <label className={labelText} for="grid-title">
               Title
             </label>
             <input
-              class={placeholderText}
+              className={placeholderText}
               id="grid-password"
               type="text"
               placeholder="Title"
@@ -103,14 +106,14 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
             />
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-3">
-          <div class="w-full px-3">
-            <label class={labelText} for="grid-time">
+        <div className="flex flex-wrap -mx-3 mb-3">
+          <div className="w-full px-3">
+            <label className={labelText} for="grid-time">
               Time
             </label>
-            <div class="relative">
+            <div className="relative">
               <select
-                class={placeholderText}
+                className={placeholderText}
                 id="grid-state"
                 onChange={handleChange}
                 value={formData.time}
@@ -122,14 +125,14 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-3">
-          <div class="w-full px-3">
-            <label class={labelText} for="grid-time">
+        <div className="flex flex-wrap -mx-3 mb-3">
+          <div className="w-full px-3">
+            <label className={labelText} for="grid-time">
               Distance
             </label>
-            <div class="relative">
+            <div className="relative">
               <select
-                class={placeholderText}
+                className={placeholderText}
                 id="grid-state"
                 onChange={handleChange}
                 value={formData.distance}
@@ -141,19 +144,20 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-2">
+        <div className="flex flex-wrap -mx-3 mb-2">
           {runData.map((a) => (
-            <div class="w-full md:w-1/3 px-3 mb-3 md:mb-0">
-              <label class={labelText} for="grid-state">
+            <div classNameName="w-full md:w-1/3 px-3 mb-3 md:mb-0">
+              <label className={labelText} for="grid-state" key={a}>
                 {a}
               </label>
-              <div class="relative">
+              <div className="relative">
                 <select
-                  class={placeholderText}
+                  classNameName={placeholderText}
                   id="grid-state"
                   onChange={handleChange}
                   value={formData.a}
                   name={a}
+                  key={a}
                 >
                   {options}
                 </select>
@@ -162,9 +166,9 @@ const Form = ({ placeholderColour, buttonTextColour, pointerColour }) => {
             </div>
           ))}
         </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <button class={buttonText} type="submit">
+        <div classNameName="flex flex-wrap -mx-3 mb-6">
+          <div classNameName="w-full px-3">
+            <button classNameName={buttonText} type="submit" name="submit">
               Submit
             </button>
           </div>

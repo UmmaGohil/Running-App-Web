@@ -2,16 +2,12 @@ import React from 'react'
 import { screen, render, cleanup } from '@testing-library/react'
 import Form from './Form'
 
-describe('App component', () => {
-  beforeAll(() => {
+describe('<Form />', () => {
+  it('should render the basic fields', () => {
     render(<Form />)
+    expect(
+      screen.getByRole('textbox', { name: '/title/i' })
+    ).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /submit/i })).toBeInTheDocument()
   })
-
-  it('should have the right message in the dom', () => {
-    const message = 'test'
-
-    expect(screen.getByText(message)).toBeInTheDocument()
-  })
-
-  afterAll(cleanup)
 })
