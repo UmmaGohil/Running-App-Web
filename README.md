@@ -1,6 +1,6 @@
 # 🏃‍♀️Running App UI
 
-After becoming annoyed at the couch to 5k app I built my own Running app. This web app enables uers to add, edit and view running routines and was built for my own personal use and not to impress anyone, hence a few bugs you may encounter. 
+This web app enables uers to add, edit and view running routines.
 
 ### 📋Aims of App
 
