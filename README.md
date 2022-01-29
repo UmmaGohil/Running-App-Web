@@ -22,7 +22,7 @@ This web app enables uers to add, edit and view running routines.
 - Clone the repo
 - `cd` into the directory
 - Run `yarn` and then `yarn start` in the terminal
-- Live demo: [https://focused-einstein-01316c.netlify.app/](https://focused-einstein-01316c.netlify.app/)
+- Live demo: [https://flamboyant-mcclintock-d769f9.netlify.app/](https://flamboyant-mcclintock-d769f9.netlify.app/)
 
 ### 💭Future Improvements
 
